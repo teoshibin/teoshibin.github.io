@@ -20,6 +20,10 @@ body {
 }
 
 /* custom css */
+html {
+  scroll-behavior: smooth;
+}
+
 .devicons {
   font-family: devicons;
   speak: none;
@@ -49,7 +53,7 @@ body {
 
 @media only screen and (max-device-width: 480px){
   .list-icons {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   .list-inline-item:not(:last-child) {
     margin-right: 4px;
@@ -57,13 +61,38 @@ body {
 }
 
 i:hover{
-  color: #295c96;
+  color: #ffad14;
 }
 
 .fh5co-bg-second {
   /* background: #dd902b; */
   background: #173455;
 }
+
+.tooltip.bottom > .tooltip-arrow {
+  opacity: 0;
+}
+.tooltip-inner {
+  background-color: #173455;
+  /* box-shadow: 0px 0px 2px black; */
+  opacity: 1 !important;
+}
+/* .tooltip.bs-tooltip-right .tooltip-arrow::before {
+  border-right-color: #000000 !important;
+  opacity: 0;
+}
+.tooltip.bs-tooltip-left .tooltip-arrow::before {
+  border-left-color: #000000 !important;
+  opacity: 0;
+}
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+  border-bottom-color: #00000000 !important;
+  opacity: 0;
+}
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: #000000 !important;
+  opacity: 0;
+} */
 
 /* end of custom css */
 #page {
@@ -778,14 +807,14 @@ h1, h2, h3, h4, h5, h6, figure {
   display: table-cell;
   vertical-align: middle;
   height: 270px;
-  background: #fff;
+  background: rgba(255, 200, 99, 0.9);
   opacity: 0;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
 .work .desc h3 {
-  font-size: 20px;
+  font-size: 23px;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s;
   -webkit-transform: translate3d(0, -15px, 0);
@@ -793,8 +822,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .work .desc span {
   display: block;
-  color: #999999;
-  font-size: 14px;
+  color: #ffffff;
+  font-size: 17px;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s;
   -webkit-transform: translate3d(0, 15px, 0);
@@ -1113,7 +1142,7 @@ input[type="text"] {
   width: 50px;
   height: 50px;
   display: table;
-  background: rgba(255, 174, 0, 0.87);
+  background: rgba(255, 173, 20, 0.9);
   color: #fff;
   text-align: center;
   -webkit-border-radius: 50%;
@@ -1125,6 +1154,9 @@ input[type="text"] {
   height: 50px;
   display: table-cell;
   vertical-align: middle;
+}
+.gototop a i:hover {
+  color: #173455;
 }
 .gototop a:hover, .gototop a:active, .gototop a:focus {
   text-decoration: none;
@@ -1155,6 +1187,7 @@ input[type="text"] {
 .btn:hover, .btn:active, .btn:focus {
   box-shadow: none !important;
   outline: none !important;
+  background-color: #ffad14 !important;
 }
 
 .btn-primary {
