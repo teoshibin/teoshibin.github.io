@@ -24,6 +24,11 @@ html {
   scroll-behavior: smooth;
 }
 
+.findoutmore {
+  color: white;
+}
+
+
 .devicons {
   font-family: devicons;
   speak: none;
