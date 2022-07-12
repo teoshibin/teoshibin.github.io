@@ -28,6 +28,10 @@ html {
   color: white;
 }
 
+.resume-btn-space {
+  margin-top: 60px;
+  margin-left: -5px;
+}
 
 .devicons {
   font-family: devicons;
