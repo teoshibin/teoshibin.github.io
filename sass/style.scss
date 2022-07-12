@@ -25,7 +25,10 @@ $brand-bg-dark: #2F3C4F;
 $input-border-focus:  $brand-primary !default;
 $form-group-margin-bottom:       30px !default;
 
-
+.resume-btn-space {
+	margin-top: 60px;
+	margin-left: -5px;
+  }
 
 // Mixin
 @mixin translateX($translatex) {
